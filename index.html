@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+
+<body class="dark:bg-black">
+    <header
+        class="w-screen h-[35vh] bg-[url(/images/bg-desktop-light.jpg)] dark:bg-[url(/images/bg-desktop-dark.jpg)] bg-no-repeat bg-cover">
+    </header>
+    <main class=" -mt-[28vh] mx-10 sm:max-w-[35vw] sm:mx-auto flex flex-col gap-8">
+        <div class="flex justify-between items-center">
+            <h1 class="text-white uppercase text-3xl font-bold tracking-[0.75rem]">todo</h1>
+
+            <button type="button" id="themeBtn" class="cursor-pointer p-4">
+                <img alt="moon icon" src="/images/icon-moon.svg" id="themeMoon" class="dark:hidden">
+                <img alt="sun icon" src="/images/icon-sun.svg" id="themeSun" class="hidden dark:block">
+            </button>
+        </div>
+
+        <div class="flex gap-4 bg-white dark:bg-dark  rounded-sm py-3 ps-4">
+            <!-- <label for="newTodo" class="flex place-content-center">
+                <span class="inline-block h-6 w-6 border-2 rounded-full border-gray-400 "></span>
+            </label> -->
+
+            <input type="text" id="newTodo" placeholder="Create a new todo..."
+                class="grow me-4 outline-0 dark:placeholder:text-white dark:text-white">
+        </div>
+
+        <section class="bg-white dark:bg-dark  rounded-sm shadow-2xl flex flex-col justify-center">
+            <ul id="todoUl">
+            </ul>
+            <div class="p-3 border-b-1 border-gray-400 last:border-0 flex justify-between">
+                <div class="text-gray-400 dark:text-gray-300 text-xs flex items-center">
+                    <span id="todoCount">X</span>
+                    <span>&nbsp;items left</span>
+                </div>
+
+                <div class=" gap-3 hidden lg:flex">
+                    <button type="button"
+                        class="text-gray-400 dark:hover:text-white text-sm cursor-pointer font-bold hover:text-blueish">All</button>
+
+                    <button type="button"
+                        class="text-gray-400 dark:hover:text-white text-sm cursor-pointer font-bold hover:text-blueish">Active</button>
+
+                    <button type="button"
+                        class="text-gray-400 dark:hover:text-white text-sm cursor-pointer font-bold hover:text-blueish">Completed</button>
+                </div>
+
+                <div>
+                    <button type="button"
+                        class="text-gray-400 dark:hover:text-white text-sm flex items-center cursor-pointer hover:text-blueish">Clear
+                        Completed</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section
+            class="flex place-content-center gap-6 lg:hidden bg-white dark:bg-dark  rounded-sm py-3 ps-4 shadow-2xl">
+            <button type="button"
+                class="text-gray-400 text dark:text-gray-300-sm cursor-pointer font-bold hover:text-blueish">All</button>
+
+            <button type="button"
+                class="text-gray-400 dark:text-gray-300 text-sm cursor-pointer font-bold hover:text-blueish">Active</button>
+
+            <button type="button"
+                class="text-gray-400 dark:text-gray-300 text-sm cursor-pointer font-bold hover:text-blueish">Completed</button>
+        </section>
+
+        <p class="text-center text-gray-500 font-bold dark:text-gray-400">
+            Drag and drop to reorder the list
+        </p>
+    </main>
+
+    <footer class="text-center pt-8 dark:text-white mb-4 sm:mb-0">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            class="font-arizonia text-blue-500 dark:text-blue-600 text-md font-bold">Frontend Mentor</a>
+        <br>
+        Coded by <a href="https://www.frontendmentor.io/profile/Mustafa-Alie" target="_blank"
+            class="font-arizonia text-blue-500 dark:text-blue-600 text-md font-bold">Mustafa Ali</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

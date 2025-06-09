@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: "Josefin Sans", sans-serif;
+
+    --font-arizonia: "Style Script", cursive;
+
+    --color-grayish: hsl(236, 33%, 92%);
+
+    --color-grad1: #3FD4F4;
+
+    --color-grad2: #C247F3;
+
+    --color-blueish: #404055;
+
+    --color-dark: #25273c;
+}
